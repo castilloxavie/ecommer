@@ -13,12 +13,72 @@
     <h1>Shopping Cart</h1>
 
     <!--loader-->
-    <div class="loader .loader__hidden">
+    <div class="loader loader__hidden">
         <div class="loader__container">
             <span></span>
         </div>
     </div>
 
     <!--Header-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="logo--icon">
+                    <path fill="currentColor" d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
+                </svg>
+            </a>
+            
+            <div class="nav__menu">
+                <button type="button" class="nav__btn btn--close">
+                    <i class='bx bx-x'></i>
+                </button>
+
+                <ul class="nav_list">
+                    <li class="nav__items">
+                        <a href="" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="" class="nav__link">Products</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__button">
+                <button type="button" class="nav__btn btn--cart">
+                    <i class='bx bxs-cart-download'></i>
+                    <span class="notify">0</span>
+                </button>
+
+                <button type="button" class="nav__btn btn--menu" >
+                    <i class='bx bx-menu' ></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--Main-->
+    <mai class="main">
+        <section class="products section">
+            <h2 class="products__titulo section_title">Products</h2>
+            <div class="products__container container">
+                <article class="product">
+                    <div class="product__img">
+                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="product 1">
+                    </div>
+                    <div class="product__content">
+                        <button type="button" class="prduct__btn add--to--cart">
+                            <i class='bx bxs-cart'></i>
+                        </button>
+                        <span class="product__price">$10</span>
+                        <span class="product__stock">available: 3</span>
+                        <h3 class="product_title">Camiseta de manga corta con cuello redondo</h3>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+    </mai>
 </body>
 </html>
