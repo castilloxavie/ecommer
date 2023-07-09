@@ -1,3 +1,4 @@
+import cart from "./components/cart.js"
 import getProducts from "./components/helper/getProducts.js"
 import loader from "./components/loader.js"
 import products from "./components/products.js"
@@ -18,4 +19,8 @@ showCart()
 /* End UI Elements*/
 
 /* products*/
-products(await getProducts())
+const {db, printProducts} = products(await getProducts())
+
+/* cart */
+
+cart(db, printProducts)
