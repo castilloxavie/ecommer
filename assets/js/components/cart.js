@@ -25,7 +25,7 @@ function cart(db, printProducts) {
         }else {
             for (const item of cart){
                 const product = db.find(p => p.id === item.id)
-                htmlCart = `
+                htmlCart += `
                     <article class="article">
                         <div class="article_img">
                             <img src="${product.image}" alt="${product.name}">
@@ -42,7 +42,7 @@ function cart(db, printProducts) {
                                 <i class="bx bx-plus"></i>
                             </button>
                         </div>
-                        <button type="button" class="article_btn remove-from-cart" data-id ="${item.id}>
+                        <button type="button" class="article_btn remove-from-cart" data-id ="${item.id}">
                             <i class="bx bx-trash"></i>
                         </button>
                         </div>

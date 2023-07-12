@@ -399,6 +399,7 @@ button {
 /*cart*/
 .cart {
     position: fixed;
+    top: 0;
     bottom: var(--header-heigth);
     right: -100%;
     max-width: 375px;
